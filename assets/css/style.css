@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 200;
+    background: url('../img/volcan2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+svg {
+    height: 40px;
+    width: 100px;
+}
+
+.logo_viajes {
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: #E83E8C;
+    display: inline-block;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.z {
+    position: relative;
+}
+
+.stroke {
+    -webkit-text-stroke: 1px #313131;
+}
+
+.menu {
+    justify-content: flex-end;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+.viajescl {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+}
+
+.my-navbar {
+    position: absolute;
+    width: 100vw;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    z-index: 999;
+}
+
+.my-carrusel {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    min-height: 50vh;
+}
+
+.carousel-item {
+    width: 100;
+    background: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 80vh;
+}
+
+/*
+.navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+*/
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.tarjeta {
+    padding: 0px;
+}
+
+.wsk-cp-product {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -1em 5em 6em #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4);
+    position: relative;
+    margin: 20px auto;
+    background-image: url('../img/cCard.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-clip: border-box;
+    opacity: 0.9;
+}
+
+.wsk-cp-img {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -khtml-transform: translate(-50%);
+    width: 100%;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.wsk-cp-img img {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    border: 1px;
+    border-color: #ffffff;
+}
+
+.wsk-contacto {
+    width: 90%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -1em 5em 6em #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4);
+    position: relative;
+    margin: 20px auto;
+    background-image: url('../img/cCard.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-clip: border-box;
+    opacity: 0.9;
+}
+
+.contactomensaje {
+    height: 100px;
+    text-align: left;
+    align-content: flex-start;
+}
+
+/* Mouse sobre la imagen de la CARD para hacer el zoom */
+.wsk-cp-product:hover .wsk-cp-img {
+    padding: 0px;
+    top: -40px;
+    width: 110%;
+    border-radius: 10px;
+    border: 1px;
+    border-color: #ffffff;
+    box-shadow: -1em 5em 6em #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4);
+    z-index: 1000;
+}
+
+/*
+.wsk-cp-product:hover .wsk-cp-img img {
+    box-shadow: -1em 5em 6em #000000;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4);
+}
+*/
+.wsk-cp-text {
+    padding-top: 100%;
+    /*color: #ffa;*/
+    color: #D4AF37;
+    /*#efb810;*/
+}
+
+.gold {
+    color: #D4AF37;
+}
+
+.wsk-cp-text .category {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 45px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.wsk-cp-text .category>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -khtml-transform: translate(-50%, -50%);
+}
+
+.wsk-cp-text .category>span {
+    padding: 12px 30px;
+    border: 1px solid #313131;
+    background: #212121;
+    color: #fff;
+    /*box-shadow: -1em 5em 6em #000000;*/
+    /*filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4);*/
+    border-radius: 27px;
+    /*transition: all 0.5s ease-in-out;*/
+}
+
+.wsk-cp-product:hover .wsk-cp-text .category>span {
+    border: 3px;
+    border-color: #FFFFFF;
+    box-shadow: none;
+    padding: 11px 28px;
+}
+
+.wsk-cp-product:hover .wsk-cp-text .category {
+    margin-top: 0px;
+}
+
+.wsk-cp-text .title-product {
+    text-align: center;
+}
+
+.wsk-cp-text .title-product h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.wsk-cp-text .description-prod p {
+    margin: 0;
+    height: 21em;
+    font-size: 22px;
+    color: #ffdf00;
+}
+
+/* Truncate */
+.wsk-cp-text .description-prod {
+    text-align: center;
+    width: 100%;
+    height: 10em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    padding: 25px 0 5px;
+    border-top: 1px solid #55513a;
+    color: #ffa;
+}
+
+.brillo {
+    background: linear-gradient(to top right, #efb810, #D4AF37, #ffa, gold, #F7DC6F);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.brillo2 {
+    background: linear-gradient(to top right, #ffa, red, gold, #efb810, #D4AC0D, #F7DC6F);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.brillo3 {
+    background: linear-gradient(to top right, #efb810, #ffa, #D4AC0D, #F7DC6F, red, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.brillo4 {
+    background: linear-gradient(to top right, #efb810, #D4AC0D, #F7DC6F, red, gold, #ffa);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.card-footer:after, .card-footer:before {
+    content: '';
+    display: table;
+}
+
+.card-footer:after {
+    clear: both;
+}
+
+.card-footer .wcf-left {
+    float: left;
+}
+
+.card-footer .wcf-right {
+    float: right;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a.buy-btn {
+    display: block;
+    color: #212121;
+    text-align: center;
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    line-height: 35px;
+    border-radius: 50%;
+    border: 1px solid #212121;
+    transition: all 0.8s ease-in-out;
+}
+
+a.buy-btn:hover, a.buy-btn:active, a.buy-btn:focus {
+    border-color: #FF9800;
+    background: #FF9800;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wsk-btn {
+    display: inline-block;
+    color: #212121;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    border-color: #D4AF37;
+    background: #D4AF37;
+    padding: 12px 30px;
+    border-radius: 27px;
+    margin: 0 5px;
+}
+
+.wsk-btn:hover, .wsk-btn:focus, .wsk-btn:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.red {
+    color: #F44336;
+    font-size: 22px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 991px) {
+    .wsk-cp-product {
+        margin: 40px auto;
+    }
+
+    .wsk-cp-product .wsk-cp-img {
+        /*top: -40px;*/
+    }
+
+    .wsk-cp-product .wsk-cp-img img {
+        /*box-shadow: -1em 5em 6em black;*/
+        /*filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=4);*/
+    }
+
+    .wsk-cp-product .wsk-cp-text .category>span {
+        border-color: #ddd;
+        box-shadow: none;
+        padding: 11px 28px;
+    }
+
+    .fondocard {
+        box-shadow: none;
+        background-image: url('../img/cCard.jpg') !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-clip: border-box;
+    }
+
+    .wsk-cp-product .wsk-cp-text .category {
+        margin-top: 0px;
+        color: #ffa;
+    }
+
+    a.buy-btn {
+        border-color: #D4AF37;
+        background: #D4AF37;
+        color: #fff;
+    }
+}
